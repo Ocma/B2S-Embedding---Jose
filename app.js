@@ -6,7 +6,7 @@ const vizContainer = document.getElementById("vizContainer");
 // This is the url for the viz. Copy from the "Share" feature
 //Do not copy the link from the browser
 const url =
-  "https://public.tableau.com/views/LearnEmbeddedAnalytics/SalesOverviewDashboard?:language=en-GB&:display_count=y&:origin=viz_share_link";
+  "https://public.tableau.com/views/ReligiousPeopleHomosexuality/ReligiousPeopleHomosexuality?:language=en-GB&:display_count=y&:origin=viz_share_link";
 
 const options = {
   device: "desktop",
