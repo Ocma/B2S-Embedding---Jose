@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- We use 'link' to lin to other files we want to reference in this 
+      case the style.
+    You can do is select 'link:css' so it builds a template for you to only
+    add the location of the css file
+    -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--  -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <title>Jose's Tableau Embedded</title>
+  </head>
+  <body>
+    <!-- h1 is the title of the website -->
+    <h1>Ma People! 😎 I present you with my first Tableau Embedded Website </h1>
+
+    <!-- I am wrapping the buttons in <div> so i can give an id and then when styling we can reference to all at the same one with a single id -->
+    <hr />
+    <!-- if we want to add an id to link to style.css we need to add it 
+    before the ">" sign -->
+    <div id="showhidebuttons">
+      <button id="Hide Viz">Hide viz</button>
+      <button id="Show Viz">Show viz</button>
+    </div>
+    <!-- <hr /> does bring the next thing into a new line (like to separate the buttons in two different lines) -->
+    <hr />
+
+    <!-- For these buttons we are assigning the class filter, which will allows in the fucntion in javascript to take a value from those buttons that are filter class only.
+The value that will be taken is also specify in the 'value' -->
+    <div id="filterbuttons">
+      <button class="filter" value="Central">Central</button>
+      <button class="filter" value="North">North</button>
+      <button class="filter" value="South">South</button>
+      <button id ="Revert">Revert</buttonid>
+    </div>
+
+    <hr>
+   
+    <div id="vizContainer">Here you can see a tableau viz from Tableau public</div>
+    <script src="./app.js"></script>
+  </body>
+</html>
